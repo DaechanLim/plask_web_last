@@ -64,7 +64,7 @@ def register():
         else:
             return "Invalid Password"
     else:
-        return "GET Success"
+        return render_template('register.html')
 
 @app.route('/articles', methods = ['GET', 'post'])
 def articles():
